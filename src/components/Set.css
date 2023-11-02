@@ -1,0 +1,66 @@
+.card {
+    position: relative;
+    display: flex;
+    max-width: 300px;
+    min-height: 300px;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    background-color: Lavenderblush;
+    border: solid 1px gray;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  
+  .card-check {
+    transform: rotateY(180deg);
+  }
+  
+  .card:after {
+    content: attr(data-back);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: Lemonchiffon;
+
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+  }
+  .card-appear {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+  .card-appear-active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .card-enter {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  
+  .card-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+  .card-exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .card-exit-active {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 500ms, transform 500ms;
+  }
+  

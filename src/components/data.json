@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "front": "apple",
+        "back":"яблоко",
+        "setName":"English"
+        
+    },
+    {
+        "id":2,
+        "front": "red",
+        "back":"красный",
+        "setName":"English"
+    },
+    {
+        "id":3,
+        "front": "margin",
+        "back":"отсупы внешний",
+        "setName":"css-свойства"
+    },
+    {
+        "id":4,
+        "front": "padding",
+        "back":"отсупы внутряние",
+        "setName":"css-свойства"
+    }
+]
