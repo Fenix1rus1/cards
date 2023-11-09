@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { Card } from './Card';
 import { CSSTransition } from 'react-transition-group';
 import './Set.css';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 
 export function Set() {
+    const param = useParams();
+    console.log(param.id);
     const location = useLocation();
     const { set } = location.state || {};
 
@@ -32,7 +34,7 @@ export function Set() {
                 in={true}
                 appear
                 key={step}
-                timeout={500} // Время анимации в миллисекундах
+                timeout={500}
                 classNames="card"
             >
                 {filteredCards.length > 0 ? (
