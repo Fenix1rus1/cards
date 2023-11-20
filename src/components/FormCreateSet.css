@@ -1,0 +1,33 @@
+.error{
+    color: red;
+    font-size: 12px;
+}
+.div_description{
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+.div_name{
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+
+
+}
+.div_main{
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 420px;
+    box-shadow: -16px 19px 22px 0px rgba(0,0,0,0.48);
+    -webkit-box-shadow: -16px 19px 22px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: -16px 19px 22px 0px rgba(0,0,0,0.48);
+    min-height: 200px;
+}
+.div_button{
+    margin: 15px;
+}
